@@ -5,3 +5,5 @@ It should be relatively compatible with other systems (I run it on multiple), bu
 ## Dependencies
 - luarocks
 - ripgrep
+- npm
+- fzf

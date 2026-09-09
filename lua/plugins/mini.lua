@@ -42,5 +42,22 @@ return {
     -- tab/bufline and statusline (statusline may be commented out in favor of lualine)
     require("mini.tabline").setup()
     -- require("mini.statusline").setup()
+
+    -- snippets and completion
+    local minisnippets = require("mini.snippets")
+    minisnippets.setup({
+      snippets = {
+        minisnippets.gen_loader.from_lang()
+      }
+    })
+
+    require("mini.completion").setup({
+      window = {
+        info = { height = 25, width = 80, border = "rounded" },
+        signature = { height = 25, width = 80, border = "rounded" }
+      },
+    })
+
+
   end
 }

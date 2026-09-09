@@ -19,4 +19,4 @@ for _, mod in ipairs(core) do
 end
 
 -- colorscheme (temporary until mangement plugin is added)
-vim.cmd.colorscheme "rose-pine-moon"
+vim.cmd.colorscheme "onedark"

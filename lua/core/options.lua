@@ -7,7 +7,6 @@ local o = vim.opt
 -- General Options
 o.clipboard = "unnamedplus" -- use system clipboard
 o.mouse = "a" -- enable mouse support
-o.mousescroll = "ver:25,hor:6" -- customize mouse scroll
 o.switchbuf = "usetab"
 o.undofile = true
 o.cursorline = true -- comment/uncomment to disable cursor line highlighting

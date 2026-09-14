@@ -8,7 +8,6 @@ return {
     icons.setup()
     icons.tweak_lsp_kind()
     icons.mock_nvim_web_devicons()
-    
 
     -- mini.basics
     require("mini.basics").setup({
@@ -26,9 +25,9 @@ return {
     })
 
     -- mini.notify and starter dash
-    local notify = require ("mini.notify")
-    notify.setup()
-    vim.notify = notify.make_notify()
+    -- local notify = require ("mini.notify")
+    -- notify.setup()
+    -- vim.notify = notify.make_notify()
 
     -- text editing basics (thank the lord)
     require("mini.surround").setup()
@@ -38,10 +37,11 @@ return {
     -- basic git functionality
     require("mini.git").setup()
     require("mini.diff").setup()
+    require("mini.files").setup()
 
     -- tab/bufline and statusline (statusline may be commented out in favor of lualine)
     require("mini.tabline").setup()
-    -- require("mini.statusline").setup()
+    require("mini.statusline").setup()
 
     -- snippets and completion
     local minisnippets = require("mini.snippets")

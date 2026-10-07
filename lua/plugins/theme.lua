@@ -4,6 +4,8 @@
 
 local theme_list = {
   "oxocarbon",
+  "github_dark",
+  "github_light",
   "rose-pine",
   "rose-pine-moon",
   "rose-pine-dawn",
@@ -17,6 +19,13 @@ return {
   {
     "nyoom-engineering/oxocarbon.nvim",
     build = false,
+    priority = 1000
+  },
+
+  {
+    "projekt0n/github-nvim-theme",
+    name = "github-theme",
+    lazy = false,
     priority = 1000
   },
 

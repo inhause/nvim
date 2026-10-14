@@ -4,6 +4,7 @@
 
 local theme_list = {
   "oxocarbon",
+  "dracula",
   "github_dark",
   "github_light",
   "rose-pine",
@@ -21,7 +22,11 @@ return {
     build = false,
     priority = 1000
   },
-
+  {
+    "Mofiqul/dracula.nvim",
+    lazy = false,
+    priority = 1000
+  },
   {
     "projekt0n/github-nvim-theme",
     name = "github-theme",

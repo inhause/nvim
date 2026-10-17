@@ -3,6 +3,9 @@
 --]]
 
 local theme_list = {
+  "kanagawa-dragon",
+  "kanagawa-lotus",
+  "kanagawa-wave",
   "oxocarbon",
   "dracula",
   "github_dark",
@@ -16,6 +19,23 @@ local theme_list = {
 }
 
 return {
+   -- Theme Manager
+  {
+    "zaldih/themery.nvim",
+    lazy = false,
+    ---@type string|fun()
+    config = function()
+      require("themery").setup({
+        themes = theme_list,
+        livePreview = true,
+      })
+    end,
+  },
+  {
+    "rebelot/kanagawa.nvim",
+    name = "kanagawa",
+    priority = 1000,
+  },
    -- Oxocarbon
   {
     "nyoom-engineering/oxocarbon.nvim",

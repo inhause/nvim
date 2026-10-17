@@ -19,6 +19,7 @@ util.map("n", "<leader>rn", "<cmd>set rnu!<CR>", opts) -- toggles relative line 
 util.map("n", "<leader>/", "gcc", { remap = true, silent = true }) -- toggle comment
 util.map("n", "<leader>/", "gc", { remap = true, silent = true }) -- toggle comment
 
+util.map("n", "<leader>th", "<cmd>Themery<CR>", { desc = "Open theme switcher" })
 
 -- Load other keymap files from `core.keymaps`
 util.load_directory("core.keymaps", { exclude = { "init" } })

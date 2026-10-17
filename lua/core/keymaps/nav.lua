@@ -33,9 +33,12 @@ map("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Browse (Explorer/Netrw)
 map("n", "<leader>pv", vim.cmd.Ex, opts, { desc = "Open netrw" }) -- netrw
+-- map("n", "<leader>e", function()
+--   require("snacks").explorer()
+-- end, { desc = "Toggle Explorer" })
 map("n", "<leader>e", function()
   require("snacks").explorer()
-end, { desc = "Toggle Explorer" })
+end, { desc = "Explorer" })
 
 -- View diagnostic inline
 map("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show diagnostic (inline)" })
